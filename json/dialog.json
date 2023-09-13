@@ -1,0 +1,81 @@
+{"projects": {
+    "intro": {
+        "projectImg": "none",
+        "dialog": {
+            "page0": {
+                "text": "Bonjour !!!"
+            },
+            "page1": {
+                "text": "Bienvenue dans mon portfolio !"
+            },
+            "page2": {
+                "text": "J'ai fais mon possible pour le rendre le plus original possible, et c'est avec ça que je suis arrivé:"
+            },
+            "page3": {
+                "text": "Un visual novel !!!"
+            },
+            "page4": {
+                "text": "Bon, on va pas prendre plus de temps que ça, voilà le premier projet.",
+                "swap": true
+            }
+
+        }
+    },
+    "project1": {
+        "projectImg": "project 1",
+        "dialog": {
+            "page0": {
+                "text": "Cool projet !!!!!!!"
+            },
+            "page1": {
+                "text": "Projet est toujours cool !!!!",
+                "NextPage": "End"
+            }
+
+        }
+        
+    },
+    "project2": {
+        "projectImg": "project 2",
+        "dialog": {
+            "page0": {
+                "text": "Cool projet 2 !!!!!!!"
+            },
+            "page1": {
+                "text": "Projet est toujours cool 2 !!!!",
+                "NextPage": "End"
+            }
+
+        }
+    },
+    "project3": {
+        "projectImg": "project 3",
+        "dialog": {
+            "page0": {
+                "text": "Cool projet 3 !!!!!!!"
+            },
+            "page1": {
+                "text": "Projet est toujours cool 3 !!!!",
+                "NextPage": "End"
+            }
+
+        }
+    },
+    "project4": {
+        "projectImg": "project 4",
+        "dialog": {
+            "page0": {
+                "text": "Cool projet 4 !!!!!!!"
+            },
+            "page1": {
+                "text": "Projet est toujours cool 4 !!!!",
+                "NextPage": "End"
+            }
+
+        }
+    }
+}
+
+
+
+}
