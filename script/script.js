@@ -157,7 +157,7 @@ buttonLast.addEventListener("click", () => {
 		projectSwap = Object.keys(json.projects)[projectIndex];
 		currentPage = Object.keys(json.projects[projectSwap].dialog)[pageNum];
 	}
-	initialize();
+	initialize(json);
 });
 
 buttonNext.addEventListener("click", () => {
