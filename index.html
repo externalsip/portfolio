@@ -4,25 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jacob Alarie-Brousseau - Porfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+  />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="wrapper">
         <div class="background clickArea">
-            <div id="currentProject">
-            </div>
-        </div>
 
+        </div>            
+        <div class="swiperPortfolio swiper-no-swiping">
+                <div class="swiper-wrapper" id="swiper-container"></div>
+        </div>
+        <div class="sprite">                
+            <div class="sprite__glasses"></div>               
+            <div class="sprite__eyes"></div>
+            <div class="sprite__mouth"></div>                
+        </div>
         <div class="textboxWrapper">
-            <button type="button" class="buttonLast">Last</button>
+            <button type="button" class="buttonLast">Projet Précédent</button>
                     <div class="textbox clickArea">
             <span class="textboxText"></span>
         </div>
-        <button type="button" class="buttonNext">Next</button>
+        <button type="button" class="buttonNext">Projet Suivant</button>
         </div>
 
     </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="script/script.js"></script>
 </body>
 </html>

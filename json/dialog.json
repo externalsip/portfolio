@@ -15,6 +15,21 @@
                 "text": "Un visual novel !!!"
             },
             "page4": {
+                "text": "J'aime beaucoup écrire du code, que ce soit pour faire du web ou des jeux vidéos, et j'aime beaucoup expérimenter."
+            },
+            "page5": {
+                "text": "Tant que j'ai besoin d'aller jouer dans du code, je serai très heureux de pouvoir travailler pour vous."
+            },
+            "page6": {
+                "text": "Comme vous pouvez voir avec ce portfolio en lui-même, je n'ai pas réelement de problèmes avec créer des choses à partir de rien. Je suis capable d'utiliser les languages HTML CSS et JavaScript très aisément."
+            },
+            "page7": {
+                "text": "Je suis également en train d'apprendre le PHP dans le contexte de WordPress, je sais également me servir du C# dans le contexte de Unity et du C++ dans le contexte de Arduino."
+            },
+            "page8": {
+                "text": "En dehors de la programmation, j'utilise Aseprite pour faire du pixel art, ce visual novel étant un exemple de ce que je peux faire, je sais également me servir de Autodesk MAYA pour de la 3D et Davinci Resolve pour du montage vidéo."
+            },
+            "page9": {
                 "text": "Bon, on va pas prendre plus de temps que ça, voilà le premier projet.",
                 "swap": true
             }
@@ -22,7 +37,34 @@
         }
     },
     "project1": {
-        "projectImg": "project 1",
+        "projectName": "Cambriolage",
+        "length": 6,
+        "content": {
+            "slide1":{
+                "type": "video",
+                "source": "https://www.youtube.com/embed/xBlYuq-_zoo?si=EMFIc4V2QJylGZUK"
+            },
+            "slide2":{
+                "type": "image",
+                "source": "/assets/images/projet1/cambriolageSC1.png"
+            },
+            "slide3":{
+                "type": "image",
+                "source": "/assets/images/projet1/cambriolageSC2.png"
+            },
+            "slide4":{
+                "type": "image",
+                "source": "/assets/images/projet1/cambriolageSC3.png"
+            },
+            "slide5":{
+                "type": "image",
+                "source": "/assets/images/projet1/cambriolageSC4.png"
+            },
+            "slide6":{
+                "type": "image",
+                "source": "/assets/images/projet1/cambriolageSC5.png"
+            }
+        },
         "dialog": {
             "page0": {
                 "text": "Cool projet !!!!!!!"
