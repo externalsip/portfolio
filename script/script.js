@@ -29,7 +29,7 @@ async function grabData() {
 }
 
 // INITIALIZE
-// initialize receives the information from the grabdata and either 
+// Function initialize handles wether text is currently being displayed or not to send the correct informations to typewritter when the user clicks.
 let isTextDisplaying = false;
 let stopText = false;
 
@@ -187,10 +187,14 @@ buttonNext.addEventListener("click", () => {
 	initialize(json);
 });
 
+// GSAP animations on spritesheets.
+
 let talk = gsap.to(".sprite__mouth", {backgroundPositionX: "-45vw", ease: SteppedEase.config(3), duration: 0.5, repeat: -1});
 let blink = gsap.to(".sprite__eyes", {backgroundPositionX: "-60vw", ease: SteppedEase.config(4), duration: 0.2, repeat: -1, repeatDelay: 5});
 
 talk.pause();
+
+//Function handles the talking animation, if text is currently being displayed, the animation will loop, it resets when the text stops displaying.
 
 function handleAnimation(){
 	if(isTextDisplaying == true){
@@ -201,6 +205,8 @@ function handleAnimation(){
 		gsap.set(".sprite__mouth", {backgroundPositionX: 0});
 	}
 }
+
+//Swiper
 
 var swiperPortfolio = new Swiper('.swiperPortfolio', {
 	// Optional parameters
@@ -238,5 +244,7 @@ function manageSlides(data){
 		}
 	}
 }
+
+//calls grabdata on execution of script, will most likely be modified later if I decide to make a title screen (would most likely be the best way to add the required info without it feeling forced)
 
 grabData();
