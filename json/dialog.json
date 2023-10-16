@@ -46,23 +46,23 @@
             },
             "slide2":{
                 "type": "image",
-                "source": "/assets/images/projet1/cambriolageSC1.png"
+                "source": "./assets/images/projet1/cambriolageSC1.png"
             },
             "slide3":{
                 "type": "image",
-                "source": "/assets/images/projet1/cambriolageSC2.png"
+                "source": "./assets/images/projet1/cambriolageSC2.png"
             },
             "slide4":{
                 "type": "image",
-                "source": "/assets/images/projet1/cambriolageSC3.png"
+                "source": "./assets/images/projet1/cambriolageSC3.png"
             },
             "slide5":{
                 "type": "image",
-                "source": "/assets/images/projet1/cambriolageSC4.png"
+                "source": "./assets/images/projet1/cambriolageSC4.png"
             },
             "slide6":{
                 "type": "image",
-                "source": "/assets/images/projet1/cambriolageSC5.png"
+                "source": "./assets/images/projet1/cambriolageSC5.png"
             }
         },
         "dialog": {
