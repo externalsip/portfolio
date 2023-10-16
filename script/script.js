@@ -137,6 +137,8 @@ function typeWriter(txt, i, wordsArr, currentWord) {
 					projectSwap = Object.keys(json.projects)[projectIndex];
 					currentPage = Object.keys(json.projects[projectSwap].dialog)[pageNum];
 					manageSlides(json);
+					buttonLast.removeAttribute("disabled");
+					buttonNext.removeAttribute("disabled");
 				}
 				else{
 					console.log("click");
@@ -149,21 +151,22 @@ function typeWriter(txt, i, wordsArr, currentWord) {
 	})
   });
 
+  //2 following event listeners manage what happens when you click on the button for the previous or next project in the list.
+
 buttonLast.addEventListener("click", () => {
 	if(projectIndex == 1){
 		pageNum = 0;
 		projectIndex = 4;
 		projectSwap = Object.keys(json.projects)[projectIndex];
 		currentPage = Object.keys(json.projects[projectSwap].dialog)[pageNum];
-		manageSlides(json);
 	}
 	else{
 		pageNum = 0;
 		projectIndex--;
 		projectSwap = Object.keys(json.projects)[projectIndex];
 		currentPage = Object.keys(json.projects[projectSwap].dialog)[pageNum];
-		manageSlides(json);
-	}
+	}		
+	manageSlides(json);
 	initialize(json);
 });
 
@@ -173,15 +176,14 @@ buttonNext.addEventListener("click", () => {
 		projectIndex = 1;
 		projectSwap = Object.keys(json.projects)[projectIndex];
 		currentPage = Object.keys(json.projects[projectSwap].dialog)[pageNum];
-		manageSlides(json);
 	}
 	else{
 		pageNum = 0;
 		projectIndex++;
 		projectSwap = Object.keys(json.projects)[projectIndex];
 		currentPage = Object.keys(json.projects[projectSwap].dialog)[pageNum];
-		manageSlides(json);
 	}
+	manageSlides(json);
 	initialize(json);
 });
 
