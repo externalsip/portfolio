@@ -391,6 +391,7 @@ iframe {
   justify-content: center;
   top: 0;
   left: 0;
+  z-index: 4;
 }
 .portraitWarning__container {
   height: 25%;
