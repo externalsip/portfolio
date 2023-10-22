@@ -3,12 +3,123 @@ font-family: 'Press Start 2P';
 user-select: none;}
 
 html body{
-    width:100vw;
-    height: 100vh;
+    width:100%;
+    height: 100%;
     overflow: hidden;
     padding:0;
 
 }
+
+//Main Screen
+
+.titleScreen{
+    width:100vw;
+    height:100vh;
+    position:absolute;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url("assets/images/portfolioBackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    top:0;
+    left:0;
+    padding:2vw;
+}
+
+.info{
+    width:100%;
+    text-align: center;
+    &__portrait{
+        width:20vw;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        object-position: center;
+    }
+    &__name{
+        font-size: 3vw;
+    }
+}
+
+.menuOptions{
+    width:40vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    &__btn{
+        width:30vw;
+        padding:0.5vw;
+        margin: 0.7vw;
+        font-size: 1vw;
+    }
+}
+
+.modalMain{
+    padding:1vw;
+    background-color: #1a1a1a;
+    position:absolute;
+    color:white;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    transform-origin: center;
+    display:none;
+    opacity: 0;
+    flex-direction: column;
+    border: white 1px solid;
+    z-index: 3;
+    &__backdrop{
+        z-index: 3;
+        width:100vw;
+        height:100vh;
+        background-color: rgba($color: white, $alpha: 0.5);
+        position:absolute;
+        left:0;
+        top: 0;
+        display:none;
+        opacity: 0;
+    }
+    &__title{
+        font-size: 2vw;
+        text-align: center;
+    }
+    &__career{
+        display:flex;
+        width:100%;
+        flex-direction: column;
+        border-top: white 2px solid;
+        border-bottom: white 2px solid;
+        padding: 1vw 0.5vw;
+        margin-bottom: 1vw;
+        &__title{
+            text-align: center;
+            font-size:1vw;
+        }
+        &__text{
+            font-size: 0.8vw;
+            line-height: 1.5;
+            align-self: center;
+        }
+    }
+    &__btn{
+        width:25%;
+        padding:0.5vw;
+        font-size: 1vw;
+        align-self: flex-end;
+        background-color: #636363;
+        border: solid white 2px;
+        &:hover{
+            background-color: #7d7d7d;
+        }
+        &:active{
+            background-color: #333333;
+        }
+    }
+}
+
+// Visual Novel
 
 .wrapper{
     width:100vw;
@@ -16,6 +127,7 @@ html body{
     position:absolute;
     left:0;
     top:0;
+    display:none;
 }
 
 .background{
@@ -30,42 +142,56 @@ html body{
 }
 
 /*  TEXTBOX  */
-.textboxWrapper{
-    width:100%;
-    height:25%;
-    position:absolute;
-    bottom:0;
-    display:flex;
-}
 
 .buttonLast{
     width:15%;
     height:100%;
+    font-size: 0.7vw;
 }
 .textbox{
-    width:70%;
+    width:100%;
     height:100%;
-    background-color: black;
+    background-color: #1a1a1a;
     color:white;
-    font-size: 1.2em;
-    padding:20px;
+    font-size: 1vw;
+    padding:1.5vw;
     border:solid white 2px;
     line-height: 1.5;
+    position:relative;
+    overflow-wrap: break-word;
+    &__Wrapper{
+        width:100%;
+        height:25%;
+        position:absolute;
+        bottom:0;
+        display:flex;
+    }
+    &__Next{
+        width:2%;
+        aspect-ratio: 1/1;
+        background-color: white;
+        position:absolute;
+        bottom:5%;
+        right:2%;
+        opacity: 0;
+    }
 }
 .buttonNext{
     width:15%;
     height:100%;
+    font-size: 0.7vw;
 }
 
 /*  SPRITE  */
 
 .sprite{
     image-rendering: pixelated;
-    width:15vw;
+    width:30vmin;
+    min-width:10%;
     aspect-ratio: 48/83;
     position:absolute;
     bottom: 25%;
-    right:5%;
+    right:1%;
     background-image: url("assets/images/characterPortfolio.png");
     background-size: cover;
     &__glasses{
@@ -78,57 +204,79 @@ html body{
     &__eyes{
         width:100%;
         height:100%;
-        background-size: 60vw, 100%;
+        background-size: 400%, 100%;
         background-image: url("assets/spritesheets/characterEyes.png");
         position:absolute;
     }
     &__mouth{
         width:100%;
         height:100%;
-        background-size: 60vw, 100%;
+        background-size: 400%, 100%;
         background-image: url("assets/spritesheets/characterMouth.png");
         position:absolute;
 
     }
 }
 
+//SWIPER
+
 .swiperPortfolio{
     width:60vw;
+    max-width: 1500px;
+    max-height:65%;
     margin: 0 auto;
-    margin-top: 25px;
-    aspect-ratio: 2/1;
-    background-color: #fff;
+    margin-top: 3vh;
+    aspect-ratio: 16/9;
+    background-color: black;
     display:none;
     position:relative;
     overflow: hidden;
     &__lastSlide{
-        width:10%;
-        aspect-ratio: 1/1;
-        background-image: url("assets/images/buttonNeutral.png");
-        position:absolute;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position:center;
-        left:-20%;
-        top:40%;
+        left:2%;
+        transform: translateY(-50%);
     }
     &__nextSlide{
-        width:10%;
+        right:2%;
+        transform: scaleX(-100%) translateY(-50%);
+    }
+    &__button{
+        width:7%;
         aspect-ratio: 1/1;
         background-image: url("assets/images/buttonNeutral.png");
         position:absolute;
         background-repeat: no-repeat;
         background-size: cover;
         background-position:center;
-        right:-20%;
-        top:40%;
-        transform: scaleX(-100%);
+        top:50%;
+        z-index: 2;
+        image-rendering: pixelated;
+        &:hover{
+            background-image: url("assets/images/buttonHover.png");
+        }
+        &:active{
+            background-image: url("assets/images/buttonClick.png");
+        }
+    }
+    &__info{
+        width:10%;
+        aspect-ratio:3/1;
+        position:absolute;
+        left:0;
+        bottom:0;
+        background-color: #424242;
+        z-index: 2;
+        font-size: 0.8vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0 5px 0 0;
     }
 }
 
 #swiper-container{
     width:100%;
     height:100%;
+    z-index: 1;
 }
 
 .swiper-slide{
@@ -136,10 +284,130 @@ html body{
     height:100%;
     background-size:contain;
     background-position:center;
-background-repeat:no-repeat;
+    background-repeat:no-repeat;
 }
 
 iframe{
     width:100%;
     height:100%;
+}
+
+//Modal
+
+.modal{
+    padding:1vw;
+    background-color: #1a1a1a;
+    position:absolute;
+    color:white;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    transform-origin: center;
+    display:none;
+    opacity: 0;
+    flex-direction: column;
+    border: white 1px solid;
+    z-index: 3;
+    &__backdrop{
+        z-index: 3;
+        width:100vw;
+        height:100vh;
+        background-color: rgba($color: #2e2e2e, $alpha: 0.5);
+        position:absolute;
+        left:0;
+        top: 0;
+        opacity: 0;
+        display:none;
+    }
+    &__title{
+        font-size: 2vw;
+        text-align: center;
+    }
+    &__role{
+        font-size:1.5vw;
+        text-align: center;
+        border-top: white 2px solid;
+        border-bottom: white 2px solid;
+        padding: 1vw 0;
+        line-height: 1.5;
+    }
+    &__description{
+        font-size: 0.8vw;
+        &__wrapper{
+            padding:0.5vw;
+            line-height: 1.5;
+        }
+    }
+    &__list{
+        list-style-type: none;
+        padding: 0;
+        margin:0.2vw;
+        margin-bottom: 0.5vw;
+        border-bottom: white 2px solid;
+        &::before{
+            content:attr(aria-label);
+            font-size: 1vw;
+        }
+        &__element{
+            padding-top: 0.5vw;
+            padding-bottom: 0.5vw;
+            padding-left: 0.8vw;
+            font-size: 0.8vw;
+            line-height: 1.5;
+            &:nth-child(1){
+                padding-top: 1vw;
+            }
+        }
+    }
+    &__btn{
+        width:25%;
+        padding:0.5vw;
+        font-size: 1vw;
+        align-self: flex-end;
+        
+    }
+}
+
+.btnStyle{
+    color:black;
+    background-color: #636363;
+    border: solid white 2px;
+    &:hover{
+        background-color: #7d7d7d;
+    }
+    &:active{
+        color:white;
+        background-color: #333333;
+    }
+}
+
+.disabledBtn{
+display: none;
+}
+
+.portraitWarning{
+    width:100vw;
+    height:100vh;
+    position:absolute;
+    background-color: #2e2e2e;
+    display:none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top:0;
+    left:0;
+    &__container{
+        height:25%;
+        width:100%;
+        font-size: 2vh;
+        padding:3vh;
+        color:white;
+        line-height: 1.5;
+    }
+}
+
+@media only screen and (orientation: portrait) {
+    .portraitWarning{
+        display: flex;
+    }
 }

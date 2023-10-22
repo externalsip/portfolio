@@ -37,83 +37,198 @@
         }
     },
     "project1": {
-        "projectName": "Cambriolage",
-        "length": 6,
+        "modalContent": {
+            "name": "Cambriolage/Larceny",
+            "role": "Développeur, Designer UI",
+            "desc": "Cambriolage est un prototype de jeu d'aventure en point and click, celui-ci contient un magasin entièrement fonctionnel ainsi qu'un support pour les choix multiples et les sauvegardes.",
+            "software": ["Visual Studio Code (HTML, CSS, JavaScript, JSON)", "GitHub/GitHub Desktop (Sauvegardes, Travail d'équipe, Archive)", "Trello (Organisation)", "Figma (Maquettes)"],
+            "media": ["Prototype de Visual Novel (vidéo)", "https://www.youtube.com/watch?v=xBlYuq-_zoo&ab_channel=joeballs", "Prototype de magasin (vidéo)", "https://www.youtube.com/watch?v=0THoGFXAyyE&ab_channel=JacobAlariebrousseau", "Repository du projet", "https://github.com/externalsip/cambriolageRemaster"]
+        },
+        "length": 7,
         "content": {
+            "slide0":{
+                "type": "image",
+                "source": "../assets/images/projet1/cambriolageSC0.png"
+            },
             "slide1":{
                 "type": "video",
-                "source": "https://www.youtube.com/embed/xBlYuq-_zoo?si=EMFIc4V2QJylGZUK"
+                "source": "https://www.youtube.com/embed/0THoGFXAyyE?si=SxQv1_1ySWPiPfDq"
             },
             "slide2":{
                 "type": "image",
-                "source": "./assets/images/projet1/cambriolageSC1.png"
+                "source": "../assets/images/projet1/cambriolageSC1.png"
             },
             "slide3":{
                 "type": "image",
-                "source": "./assets/images/projet1/cambriolageSC2.png"
+                "source": "../assets/images/projet1/cambriolageSC2.png"
             },
             "slide4":{
                 "type": "image",
-                "source": "./assets/images/projet1/cambriolageSC3.png"
+                "source": "../assets/images/projet1/cambriolageSC3.png"
             },
             "slide5":{
                 "type": "image",
-                "source": "./assets/images/projet1/cambriolageSC4.png"
+                "source": "../assets/images/projet1/cambriolageSC4.png"
             },
             "slide6":{
                 "type": "image",
-                "source": "./assets/images/projet1/cambriolageSC5.png"
+                "source": "../assets/images/projet1/cambriolageSC5.png"
             }
         },
         "dialog": {
             "page0": {
-                "text": "Cool projet !!!!!!!"
+                "text": "Cambriolage est un projet personnel que j'ai créé avec un ami, il s'occupait des sprites alors que je m'occupai de la programmation."
             },
             "page1": {
-                "text": "Projet est toujours cool !!!!",
+                "text": "L'idée originale était de rendre un projet que nous avions fait pendant notre première session au collège plus 'Responsive', parce que quand on l'a fait originalement, on ne savait pas comment faire."
+            },
+            "page2": {
+                "text": "Quand j'ai entammé la création, je me suis dit que ce serait fun d'essayer de créer un jeu complet plutôt que simplement réadapter le projet avec nos connaissances d'ajourd'hui."
+            },
+            "page3": {
+                "text": "C'est comme ça qu'on est arrivé avec l'idée du jeu point-and-click grandement inspiré de Ace Attorney qu'est Cambriolage."
+            },
+            "page4": {
+                "text": "Malheureusement, le projet n'a jamais été complété, car c'était quelque chose de beaucoup trop gros pour le temps qu'on avait et le format web pur avec javascript simple n'est pas le meilleur environement pour créer un jeu."
+            },
+            "page5": {
+                "text": "J'ai tout de même réussi à créer un magasin entièrement fonctionnel, ce dont je suis très fier."
+            },
+            "page6": {
+                "text": "La majorité de ce qui est utilisé dans ce projet, j'ai dû l'apprendre moi-même avec beaucoup de pages de Stack Overflow d'ouvertes. (Et un peu D'IA pour expliquer certaines logiques plus clairement)"
+            },
+            "page7": {
+                "text": "L'idée de ce jeu n'est tout de même pas abandonnée, un jour nous pensons le refaire entièrement dans un engine fait pour ça, très probablement Godot ou Unity."
+            },
+            "page8": {
+                "text": "Bon, c'est pas mal tout ce que j'avais à dire là-dessus, j'ai pas mal aimé travailler sur ce projet parce que j'ai dû faire énormément d'expérimentation."
+            },
+            "page9": {
+                "text": "L'idée que j'ai réussi à créer une base pour un jeu de ce genre purement en HTML est honnêtement suffisant pour moi. Un jour, j'espère pouvoir faire honeur à ce projet en le complétant.",
                 "NextPage": "End"
             }
-
         }
         
     },
     "project2": {
-        "projectImg": "project 2",
+        "modalContent": {
+            "name": "Dressup",
+            "role": "Développeur, Designer UI",
+            "desc": "Dressup est un créateur de personnages à partir d'éléments comme des yeux, cheveux, vêtements, etc. Les sprites sont tous originalement rouges, afin qu'on puisse changer leurs couleurs à l'aide de filtres css.",
+            "software": ["Visual Studio Code (HTML, CSS, Javascript)", "GitHub/GitHub Desktop (Sauvegardes, Travail d'équipe, Archive)"],
+            "media": ["Présentation du Projet (vidéo)", "https://www.youtube.com/watch?v=UALQJVaA0Bw&ab_channel=joeballs", "Repository du projet", "https://github.com/externalsip/dressup"]
+        },
+        "length": 5,
+        "content": {
+            "slide0":{
+                "type": "image",
+                "source": "../assets/images/projet2/dressupSC0.png"
+            },
+            "slide1": {
+                "type": "video",
+                "source": "https://www.youtube.com/embed/UALQJVaA0Bw?si=UWIndh62eLq7eeDI"
+            },
+            "slide2":{
+                "type": "image",
+                "source": "../assets/images/projet2/dressupSC2.png"
+            },
+            "slide3":{
+                "type": "image",
+                "source": "../assets/images/projet2/dressupSC3.png"
+            },
+            "slide4":{
+                "type": "image",
+                "source": "../assets/images/projet2/dressupSC4.png"
+            }
+        },
         "dialog": {
             "page0": {
-                "text": "Cool projet 2 !!!!!!!"
+                "text": "Dressup est le premier projet personel sur lequel j'ai travaillé, dans ce projet, mon défi était d'avoir le moins d'html possible et de créer le plus d'éléments possible dans le JavaScript."
             },
-            "page1": {
-                "text": "Projet est toujours cool 2 !!!!",
+            "page1":{
+                "text": "Je suis très content d'à quel point c'était facile de rajouter un nouvel élément dans les listes, il suffisait de rajouter son lien dans l'array de sa catégorie et il était déjà complètement implementé."
+            },
+            "page2":{
+                "text": "Ça rendait la vie à mon partenaire beaucoup plus facile, parce qu'il n'avait pas à naviguer le code pour implementer son travail élément par élément."
+            },
+            "page3": {
+                "text": "Ce projet à été complètement terminé, à l'exception d'une chose, on ne pouvait pas transformer les créations en images parce que les filtres css étaient ignorées, nous n'avons jamais pu régler ce problème."
+            },
+            "page4": {
+                "text": "À l'exception de ce problème, le projet fonctionnait parfaitement, je suis content avec le résultat.",
                 "NextPage": "End"
             }
-
         }
     },
     "project3": {
-        "projectImg": "project 3",
+        "modalContent":{
+            "name": "Projet Airflight",
+            "role": "Développeur, Designer Web",
+            "desc": "Le projet airflight consiste en la refonte d'un site web à l'aide de Bootstrap, c'est un projet fait dans le cadre de la Techniques d'Intégration Multimédia.",
+            "software": ["Visual Studio Code (HTML, CSS, JavaScript)", "GitHub/GitHub Desktop (Sauvegardes, Travail d'équipe, Archive)", "Figma (Maquettes)"],
+            "media": ["Présentation du Projet (vidéo)", "https://www.youtube.com/watch?v=he3QFwtuSRE&ab_channel=JacobAlariebrousseau", "Repository du projet", "https://github.com/externalsip/alariebrousseau_do_airflight"]
+        },
+        "length": 1,
+        "content": {
+           "slide0":{
+                "type": "video",
+                "source": "https://www.youtube.com/embed/he3QFwtuSRE?si=VfrJBMtv7AQ6LlK3"
+            }
+        },
         "dialog": {
             "page0": {
-                "text": "Cool projet 3 !!!!!!!"
+                "text": "Le projet Airflight était un projet que nous avons fait en classe, dans celui-ci nous avons fait la refonte du site web de ARS ELECTRONICA, j'étais en charge de la landing page."
             },
             "page1": {
-                "text": "Projet est toujours cool 3 !!!!",
+                "text": "L'entièreté de l'alignement devait être faite avec Bootstrap, nous devions également rendre la page 'Responsive'."
+            },
+            "page2": {
+                "text": "C'était le premier projet dans lequel on nous a fait travailler à plusieurs sur le même repository GitHub, donc la première fois qu'on a dû affronter les conficts, ça ne sera pas la dernière fois."
+            },
+            "page3": {
+                "text": "Nous devions également faire l'utilisation de Swiper.js pour les caroussels présents sur les pages, ceux-ci devaient également être 'Responsive'."
+            },
+            "page4": {
+                "text": "J'aime beaucoup utiliser Bootstrap, la majorité des projets sur lesquels je travaile l'utilise.",
                 "NextPage": "End"
             }
-
         }
     },
     "project4": {
-        "projectImg": "project 4",
+        "modalContent": {
+            "name": "LIMINAL",
+            "role": "Modélisation et Animation 3D, Montage Audio et Vidéo",
+            "desc": "LIMINAL est un court vidéo racontant une histoire laissée à l'interprétation à propos de quelqu'un pris dans un endroit à la fois familier et étranger.",
+            "software": ["Autodesk MAYA (Modélisation/Animation 3D)", "VCV RACK (Création de sons synthétiques)", "REAPER (Montage Audio)", "DaVinci Resolve (Montage Vidéo)"],
+            "media": ["Présentation du Projet (vidéo)", "https://www.youtube.com/watch?v=dqnG4whgjDM&ab_channel=JacobAlariebrousseau"]
+        },
+        "length": 1,
+        "content": {
+            "slide0":{
+                 "type": "video",
+                 "source": "https://www.youtube.com/embed/dqnG4whgjDM?si=YD364sr4rVoTg4Lr"
+             }
+         },
         "dialog": {
             "page0": {
-                "text": "Cool projet 4 !!!!!!!"
+                "text": "Premier projet qui n'est pas du web !!! LIMINAL est un projet sur lequel j'ai travaillé pendant la session d'hiver 2023."
             },
             "page1": {
-                "text": "Projet est toujours cool 4 !!!!",
+                "text": "Tout ce qui est présent dans celui-ci a été modélisé et animé par moi et mon partenaire."
+            },
+            "page2": {
+                "text": "J'ai à la fois adoré et détesté ce projet, parce que je trouvait notre concept vraiment cool, mais d'un autre côté, les deadlines étaient très, très serrées, et j'ai dû modéliser la scène des piscines entière en une fin de semaine."
+            },
+            "page3": {
+                "text": "J'ai fini par mettre plus ou moins 32 heures dessus en 2 jours, j'ai dû arrêter parce que j'étais sur le point de m'écrouler, mais à mon avis, ça a valu la peine."
+            },
+            "page4": {
+                "text": "Ce projet a été nomminé pour le concours d'essais audio-visuels 2023 de la techniques. D'après moi, cette nommination a valu la peine."
+            },
+            "page5": {
+                "text": "La seule directive que nous avions pour ce projet était de faire sentir quelque chose au spectateur, pour notre part, on a tenté de faire sentir de l'angoisse.",
                 "NextPage": "End"
             }
-
         }
     }
 }

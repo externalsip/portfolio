@@ -14,27 +14,110 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="wrapper">
+
+    <!--
+        
+        Main Screen
+    
+    -->
+    <div class="titleScreen">
+        <div class="info">
+            <img class="info__portrait" src="assets/images/portrait.jpg">
+            <h1 class="info__name">Jacob Alarie-Brousseau</h1>
+        </div>
+        <div class="menuOptions">
+            <button type="button" class="menuOptions__btn btnStyle" id="openPortfolio">Ouvrir</button>
+            <button type="button" class="menuOptions__btn btnStyle" id="openInfo">Info</button>
+        </div>
+
+        <div class="modalMain__backdrop"></div>
+
+        <div class="modalMain">
+            <h1 class="modalMain__title">Infos</h1>
+            <div class="modalMain__career">
+                <h1 class="modalMain__career__title">Objectif de carrière</h1>
+                <p class="modalMain__career__text">Mon objectif de carrière est de gagner de l'expérience et des connaissances afin de pouvoir monter en rang. J'aime beaucoup expérimenter et suis très ouvert à découvrir des nouvelles méthodes de travail.</p>
+            </div>
+            <ul class="modal__list" aria-label="Logiciels">
+                <li class="modal__list__element">Visual Studio Code</li>
+                <li class="modal__list__element">Figma</li>
+                <li class="modal__list__element">GitHub Desktop</li>
+                <li class="modal__list__element">Autodesk Maya</li>
+                <li class="modal__list__element">DaVinci Resolve</li>
+                <li class="modal__list__element">Cycling 74 Max 8</li>
+            </ul>
+            <ul class="modal__list" aria-label="Me rejoindre">
+                <li class="modal__list__element">Courriel: jacobalariebrousseau@gmail.com</li>
+                <li class="modal__list__element">GitHub: <a href="https://github.com/externalsip">Jacob Alarie-Brousseau</a></li>
+                <li class="modal__list__element">Linkedin: <a href="https://www.linkedin.com/in/jacob-alarie-brousseau-832609293/">Jacob Alarie-Brousseau</a></li>
+            </ul>
+            <button type="button" class="modalMain__btn btnStyle">Fermer</button>
+        </div>
+    </div>
+
+    <!--
+
+        Portfolio/Visual Novel
+
+    -->
+
+    <div class="wrapper">    
         <div class="background clickArea">
 
         </div>            
-        <div class="swiperPortfolio swiper-no-swiping">
-                <div class="swiper-wrapper" id="swiper-container"></div>
+        <div class="swiperPortfolio swiper-no-swiping">                
+            <div class="swiperPortfolio__lastSlide swiperPortfolio__button"></div>
+            <div class="swiperPortfolio__nextSlide swiperPortfolio__button"></div>
+
+            <button type="button" class="swiperPortfolio__info btnStyle">Info</button>
+
+            <div class="swiper-wrapper" id="swiper-container"></div>                
         </div>
-        <div class="sprite">                
+
+        <div class="sprite clickArea">                
             <div class="sprite__glasses"></div>               
             <div class="sprite__eyes"></div>
             <div class="sprite__mouth"></div>                
         </div>
-        <div class="textboxWrapper">
-            <button type="button" class="buttonLast" disabled>Projet Précédent</button>
-                    <div class="textbox clickArea">
-            <span class="textboxText"></span>
+
+        <div class="textbox__Wrapper">
+            <button type="button" class="buttonLast btnStyle disabledBtn" disabled>Projet Précédent</button>
+            <div class="textbox clickArea">
+                <span class="textbox__Text"></span>
+                <div class="textbox__Next"></div>
+            </div>
+            <button type="button" class="buttonNext btnStyle disabledBtn" disabled>Projet Suivant</button>
         </div>
-        <button type="button" class="buttonNext" disabled>Projet Suivant</button>
+<!--
+    MODAL
+-->
+        <div class="modal__backdrop"></div>
+        
+        <div class="modal">
+            <h1 class="modal__title">Title</h1>
+            <span class="modal__role">role</span>
+            <div class="modal__description__wrapper">
+                <p class="modal__description">description</p>
+            </div>
+            <ul class="modal__list softwareList" aria-label="Logiciels utilisés">
+                <li class="modal__list__element">Logiciel</li>
+            </ul>
+            <ul class="modal__list mediaList" aria-label="Médias">
+                <li class="modal__list__element">Media</li>
+            </ul>
+            <button type="button" class="modal__btn btnStyle">Fermer</button>
         </div>
 
     </div>
+
+    <div class="portraitWarning">
+        <div class="portraitWarning__container">
+            <p class="portraitWarning__container__text">
+                Attention, cette page n'est pas faite pour être vue en portrait, merci de pivoter votre appareil.
+            </p>
+        </div>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="script/script.js"></script>
