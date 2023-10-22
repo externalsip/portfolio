@@ -19,6 +19,12 @@ body {
   position: relative;
 }
 
+@media only screen and (max-device-width: 480px) {
+  body {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+}
 .titleScreen {
   width: 100vw;
   height: 100vh;
