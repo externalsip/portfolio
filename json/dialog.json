@@ -122,7 +122,7 @@
         "content": {
             "slide0":{
                 "type": "image",
-                "source": "../assets/images/projet2/dressupSC0.png"
+                "source": "assets/images/projet2/dressupSC0.png"
             },
             "slide1": {
                 "type": "video",
@@ -130,15 +130,15 @@
             },
             "slide2":{
                 "type": "image",
-                "source": "../assets/images/projet2/dressupSC2.png"
+                "source": "assets/images/projet2/dressupSC2.png"
             },
             "slide3":{
                 "type": "image",
-                "source": "../assets/images/projet2/dressupSC3.png"
+                "source": "assets/images/projet2/dressupSC3.png"
             },
             "slide4":{
                 "type": "image",
-                "source": "../assets/images/projet2/dressupSC4.png"
+                "source": "assets/images/projet2/dressupSC4.png"
             }
         },
         "dialog": {
