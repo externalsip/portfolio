@@ -24,12 +24,6 @@ body {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
   }
-  .modal {
-    overflow: scroll;
-  }
-  .modalMain {
-    overflow: scroll;
-  }
 }
 .titleScreen {
   width: 100%;
