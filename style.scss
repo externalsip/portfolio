@@ -63,7 +63,8 @@ body{
 }
 
 .modalMain{
-    padding:1vw;
+    padding:0.8vw;
+    max-height: 90%;
     background-color: #1a1a1a;
     position:absolute;
     color:white;
@@ -88,7 +89,7 @@ body{
         opacity: 0;
     }
     &__title{
-        font-size: 2vw;
+        font-size: 1.7vw;
         text-align: center;
     }
     &__career{
@@ -97,14 +98,14 @@ body{
         flex-direction: column;
         border-top: white 2px solid;
         border-bottom: white 2px solid;
-        padding: 1vw 0.5vw;
+        padding: 0.8vw 0.5vw;
         margin-bottom: 1vw;
         &__title{
             text-align: center;
             font-size:1vw;
         }
         &__text{
-            font-size: 0.8vw;
+            font-size: 0.6vw;
             line-height: 1.5;
             align-self: center;
         }
@@ -326,7 +327,7 @@ iframe{
         display:none;
     }
     &__title{
-        font-size: 2vw;
+        font-size: 1.7vw;
         text-align: center;
     }
     &__role{
@@ -358,7 +359,7 @@ iframe{
             padding-top: 0.5vw;
             padding-bottom: 0.5vw;
             padding-left: 0.8vw;
-            font-size: 0.8vw;
+            font-size: 0.6vw;
             line-height: 1.5;
             &:nth-child(1){
                 padding-top: 1vw;
