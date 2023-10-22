@@ -388,7 +388,7 @@ iframe {
   line-height: 1.5;
 }
 .modal__list__element:nth-child(1) {
-  padding-top: 1vw;
+  padding-top: 0.7vw;
 }
 .modal__btn {
   width: 25%;
