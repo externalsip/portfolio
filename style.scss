@@ -70,6 +70,7 @@ body{
 }
 
 .modalMain{
+    overflow: scroll;
     padding:0.8vw;
     max-height: 90%;
     background-color: #1a1a1a;
@@ -334,6 +335,7 @@ iframe{
     background-color: #1a1a1a;
     position:absolute;
     color:white;
+    overflow: scroll;
     top:50%;
     left:50%;
     transform: translate(-50%, -50%);
