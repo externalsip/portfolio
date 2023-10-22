@@ -48,7 +48,6 @@ async function initialize(data) {
 		stopText = true;
 	}
 	else{
-		console.log("clicked");
 		if(data.projects[projectSwap].content != null){			
 			currentProject.style.display = "block";
 			
@@ -174,7 +173,6 @@ clickArea.forEach((element) => {
 					buttonNext.removeAttribute("disabled");
 				}
 				else{
-					console.log("click");
 					pageNum++;
 					currentPage = Object.keys(json.projects[projectSwap].dialog)[pageNum];
 				}
