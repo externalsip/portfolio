@@ -24,6 +24,12 @@ body {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
   }
+  .modal {
+    overflow: scroll;
+  }
+  .modalMain {
+    overflow: scroll;
+  }
 }
 .titleScreen {
   width: 100%;
@@ -72,7 +78,6 @@ body {
 }
 
 .modalMain {
-  overflow: scroll;
   padding: 0.8vw;
   max-height: 90%;
   background-color: #1a1a1a;
@@ -330,7 +335,6 @@ iframe {
   background-color: #1a1a1a;
   position: absolute;
   color: white;
-  overflow: scroll;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -441,4 +445,7 @@ iframe {
   .portraitWarning {
     display: flex;
   }
+}
+a {
+  color: white;
 }/*# sourceMappingURL=style.css.map */
