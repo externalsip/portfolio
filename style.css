@@ -145,7 +145,7 @@ body {
 }
 
 .background {
-  height: 75%;
+  height: 100%;
   width: 100%;
   position: absolute;
   top: 0;
@@ -153,6 +153,26 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.returnBtn {
+  width: 4vw;
+  aspect-ratio: 1/1;
+  image-rendering: pixelated;
+  background-image: url("assets/images/buttonNeutral.png");
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  top: 2%;
+  left: 1%;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.returnBtn:hover {
+  background-image: url("assets/images/buttonHover.png");
+}
+.returnBtn:active {
+  background-image: url("assets/images/buttonClick.png");
 }
 
 /*  TEXTBOX  */
@@ -254,6 +274,7 @@ body {
 .swiperPortfolio__button {
   width: 7%;
   aspect-ratio: 1/1;
+  border-radius: 50%;
   background-image: url("assets/images/buttonNeutral.png");
   position: absolute;
   background-repeat: no-repeat;

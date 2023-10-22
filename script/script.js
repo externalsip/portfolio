@@ -27,6 +27,17 @@ openBtn.addEventListener("click", () => {
 	initialize(json);
 });
 
+let returnBtn = document.querySelector(".returnBtn");
+
+returnBtn.addEventListener("click", () => {
+	mainScreen.style.display = "flex";
+	vn.style.display = "none";
+	pageNum = 0;
+	projectIndex = 0;
+	projectSwap = Object.keys(json.projects)[projectIndex];
+	currentPage = Object.keys(json.projects[projectSwap].dialog)[pageNum];
+});
+
 async function grabData() {
 	const resp = await fetch(dialogData);
 	json = await resp.json();
