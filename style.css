@@ -16,7 +16,7 @@ html, body {
 }
 
 body {
-  position: fixed;
+  position: relative;
 }
 
 @media only screen and (max-device-width: 480px) {
