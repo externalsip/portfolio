@@ -181,6 +181,7 @@ body{
     width:15%;
     height:100%;
     font-size: 0.7vw;
+    border-top-left-radius: 5px;
 }
 .textbox{
     width:100%;
@@ -214,6 +215,7 @@ body{
     width:15%;
     height:100%;
     font-size: 0.7vw;
+    border-top-right-radius: 5px;
 }
 
 /*  SPRITE  */
@@ -299,6 +301,8 @@ body{
         position:absolute;
         left:0;
         bottom:0;
+        border-bottom:none!important;
+        border-left:none!important;
         background-color: #424242;
         z-index: 2;
         font-size: 0.8vw;
@@ -463,8 +467,8 @@ a{
     display:flex;
     align-items: center;
     justify-content: center;
-    color:white;
-    border: solid white 2px;
+    border-bottom: solid white 2px;
+    border-left: solid white 2px;
     padding:1vw;
     border-bottom-left-radius: 5px;
     line-height: 1.5;
