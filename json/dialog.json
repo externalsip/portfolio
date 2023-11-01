@@ -48,31 +48,38 @@
         "content": {
             "slide0":{
                 "type": "image",
-                "source": "assets/images/projet1/cambriolageSC0.png"
+                "source": "assets/images/projet1/cambriolageSC0.png",
+                "tip": "Cambriolage"
             },
             "slide1":{
                 "type": "video",
-                "source": "https://www.youtube.com/embed/0THoGFXAyyE?si=SxQv1_1ySWPiPfDq"
+                "source": "https://www.youtube.com/embed/0THoGFXAyyE?si=SxQv1_1ySWPiPfDq",
+                "tip": "Démonstration du magasin"
             },
             "slide2":{
                 "type": "image",
-                "source": "assets/images/projet1/cambriolageSC1.png"
+                "source": "assets/images/projet1/cambriolageSC1.png",
+                "tip": "Dialogue en JSON"
             },
             "slide3":{
                 "type": "image",
-                "source": "assets/images/projet1/cambriolageSC2.png"
+                "source": "assets/images/projet1/cambriolageSC2.png",
+                "tip": "Déclaration d'objets Javascript"
             },
             "slide4":{
                 "type": "image",
-                "source": "assets/images/projet1/cambriolageSC3.png"
+                "source": "assets/images/projet1/cambriolageSC3.png",
+                "tip": "Fonction ajoutant objets dans l'inventaire du joueur"
             },
             "slide5":{
                 "type": "image",
-                "source": "assets/images/projet1/cambriolageSC4.png"
+                "source": "assets/images/projet1/cambriolageSC4.png",
+                "tip": "Fonction pour les achats d'objets"
             },
             "slide6":{
                 "type": "image",
-                "source": "assets/images/projet1/cambriolageSC5.png"
+                "source": "assets/images/projet1/cambriolageSC5.png",
+                "tip": "Fonction pour vente d'objets"
             }
         },
         "dialog": {
@@ -122,23 +129,33 @@
         "content": {
             "slide0":{
                 "type": "image",
-                "source": "assets/images/projet2/dressupSC0.png"
+                "source": "assets/images/projet2/dressupSC0.png",
+                "tip": "Dressup"
             },
             "slide1": {
                 "type": "video",
-                "source": "https://www.youtube.com/embed/UALQJVaA0Bw?si=UWIndh62eLq7eeDI"
+                "source": "https://www.youtube.com/embed/UALQJVaA0Bw?si=UWIndh62eLq7eeDI",
+                "tip": "Démonstration du projet"
             },
             "slide2":{
                 "type": "image",
-                "source": "assets/images/projet2/dressupSC2.png"
+                "source": "assets/images/projet2/dressupSC1.png",
+                "tip": "Arrays de liens pour objets"
             },
             "slide3":{
                 "type": "image",
-                "source": "assets/images/projet2/dressupSC3.png"
+                "source": "assets/images/projet2/dressupSC2.png",
+                "tip": "Fonction pour changement de catégories"
             },
             "slide4":{
                 "type": "image",
-                "source": "assets/images/projet2/dressupSC4.png"
+                "source": "assets/images/projet2/dressupSC3.png",
+                "tip": "Fonctions localStorage"
+            },
+            "slide5":{
+                "type": "image",
+                "source": "assets/images/projet2/dressupSC4.png",
+                "tip": "Fonction modifiant la hue de l'élément sélectionné"
             }
         },
         "dialog": {
@@ -172,7 +189,8 @@
         "content": {
            "slide0":{
                 "type": "video",
-                "source": "https://www.youtube.com/embed/he3QFwtuSRE?si=VfrJBMtv7AQ6LlK3"
+                "source": "https://www.youtube.com/embed/he3QFwtuSRE?si=VfrJBMtv7AQ6LlK3",
+                "tip": "Présentation de la landing page"
             }
         },
         "dialog": {
@@ -206,7 +224,8 @@
         "content": {
             "slide0":{
                  "type": "video",
-                 "source": "https://www.youtube.com/embed/dqnG4whgjDM?si=YD364sr4rVoTg4Lr"
+                 "source": "https://www.youtube.com/embed/dqnG4whgjDM?si=YD364sr4rVoTg4Lr",
+                 "tip": "Présentation de la vidéo"
              }
          },
         "dialog": {

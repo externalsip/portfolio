@@ -262,6 +262,7 @@ body{
     margin-top: 3vh;
     aspect-ratio: 16/9;
     background-color: black;
+    border: solid white 2px;
     display:none;
     position:relative;
     overflow: hidden;
@@ -449,4 +450,22 @@ display: none;
 
 a{
     color:white;
+}
+
+.slideTip{
+    width:20%;
+    font-size: 0.8vw;
+    position:absolute;
+    top:0;
+    right:0;
+    background-color: #424242;
+    z-index: 2;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    border: solid white 2px;
+    padding:1vw;
+    border-bottom-left-radius: 5px;
+    line-height: 1.5;
 }

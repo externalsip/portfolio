@@ -283,12 +283,12 @@ function manageSlides(data){
 		//const swipePage = document.createElement("div");
 		//swipePage.classList.add("swiper-slide");
 		if(data.projects[projectSwap].content[currentSlide].type == "video"){			
-			swiperPortfolio.appendSlide(('<div class="swiper-slide")><iframe src= '+ data.projects[projectSwap].content[currentSlide].source +'</div>'));
+			swiperPortfolio.appendSlide(('<div class="swiper-slide")><div class="slideTip">' + data.projects[projectSwap].content[currentSlide].tip + '</div><iframe src= '+ data.projects[projectSwap].content[currentSlide].source +'></iframe></div>'));
 			//swipePage.style.backgroundImage = "url('" + data.projects[projectSwap].content[currentSlide].source + "')";
 			//swipercontainer.appendChild(swipePage);
 		}
 		else{
-			swiperPortfolio.appendSlide(('<div class="swiper-slide" style= "background-image: url('+ data.projects[projectSwap].content[currentSlide].source +');"></div>'));
+			swiperPortfolio.appendSlide(('<div class="swiper-slide" style= "background-image: url('+ data.projects[projectSwap].content[currentSlide].source +');"><div class="slideTip">' + data.projects[projectSwap].content[currentSlide].tip + '</div></div>'));
 			//const video = document.createElement("iframe");
 			//video.setAttribute("src", data.projects[projectSwap].content[currentSlide].source);
 			//swipePage.appendChild(video);
