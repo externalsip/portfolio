@@ -310,6 +310,7 @@ body{
         justify-content: center;
         align-items: center;
         border-radius: 0 5px 0 0;
+        color: white!important;
     }
 }
 
@@ -403,19 +404,17 @@ iframe{
         padding:0.5vw;
         font-size: 1vw;
         align-self: flex-end;
-        
     }
 }
 
 .btnStyle{
-    color:black;
+    color:white;
     background-color: #636363;
     border: solid white 2px;
     &:hover{
         background-color: #7d7d7d;
     }
     &:active{
-        color:white;
         background-color: #333333;
     }
 }
@@ -472,5 +471,5 @@ a{
     padding:1vw;
     border-bottom-left-radius: 5px;
     line-height: 1.5;
-    
+    color:white !important;
 }

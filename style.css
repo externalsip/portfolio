@@ -308,6 +308,7 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 0 5px 0 0;
+  color: white !important;
 }
 
 #swiper-container {
@@ -402,7 +403,7 @@ iframe {
 }
 
 .btnStyle {
-  color: black;
+  color: white;
   background-color: #636363;
   border: solid white 2px;
 }
@@ -410,7 +411,6 @@ iframe {
   background-color: #7d7d7d;
 }
 .btnStyle:active {
-  color: white;
   background-color: #333333;
 }
 
@@ -465,4 +465,5 @@ a {
   padding: 1vw;
   border-bottom-left-radius: 5px;
   line-height: 1.5;
+  color: white !important;
 }/*# sourceMappingURL=style.css.map */
