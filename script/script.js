@@ -201,7 +201,7 @@ buttonLast.addEventListener("click", () => {
 	isTextDisplaying = false;
 	if(projectIndex == 1){
 		pageNum = 0;
-		projectIndex = 4;
+		projectIndex = 5;
 		projectSwap = Object.keys(json.projects)[projectIndex];
 		currentPage = Object.keys(json.projects[projectSwap].dialog)[pageNum];
 	}
@@ -219,7 +219,7 @@ buttonLast.addEventListener("click", () => {
 //Next project
 buttonNext.addEventListener("click", () => {
 	isTextDisplaying = false;
-	if(projectIndex == 4){
+	if(projectIndex == 5){
 		pageNum = 0;
 		projectIndex = 1;
 		projectSwap = Object.keys(json.projects)[projectIndex];
@@ -327,12 +327,19 @@ function manageModal(data){
 	}
 	//loops in steps of 2 on the elements present in the media array in JSON
 	//This has to be the goofiest loop I've ever written, let me cook.
-	for(let i = 0; i + 1 <= data.projects[projectSwap].modalContent.media.length; i = i + 2){
+	if(data.projects[projectSwap].modalContent.media != undefined){
+		mediaList.style.display = "block";
+		for(let i = 0; i + 1 <= data.projects[projectSwap].modalContent.media.length; i = i + 2){
 		const li = document.createElement("li");
 		li.classList.add("modal__list__element");
 		li.innerHTML = "<a href= '" + data.projects[projectSwap].modalContent.media[i + 1] + "'> "+ data.projects[projectSwap].modalContent.media[i] +" </a>";
 		mediaList.appendChild(li);
 	}
+	}
+	else{
+		mediaList.style.display = "none";
+	}
+	
 }
 
 //Functions display and hide modal in main menu

@@ -249,6 +249,42 @@
                 "NextPage": "End"
             }
         }
+    },
+    "project5": {
+        "modalContent": {
+            "name": "Bouboule",
+            "role": "Modélisation 3D",
+            "desc": "Bouboule est un personnage modélisé dans le cadre de notre cours de modélisation 3D",
+            "software": ["Autodesk MAYA (Modélisation 3D)"]
+        },
+        "length": 2,
+        "content": {
+            "slide0": {
+                "type": "image",
+                "source": "assets/images/projet5/BoubouleSC0.jpg",
+                "tip": "Bouboule"
+            },
+            "slide1": {
+                "type": "image",
+                "source": "assets/images/projet5/BoubouleSC1.jpg",
+                "tip": "Bouboule (encore)"
+            }
+        },
+        "dialog": {
+            "page0" :{
+                "text": "Cool histoire: Bouboule est un personnage que j'ai originalement créé dans le jeu Spore quand j'étais petit."
+            },
+            "page1" :{
+                "text": "Depuis ce temps, il est apparu dans plus d'un de mes projets personnels, et au cours des années, j'ai fais assez de modifications au design original que c'est maintenant mon propre personnage."
+            },
+            "page2" :{
+                "text": "Il n'a pas l'air très gentil, mais il ne ferait pas de mal à une mouche."
+            },
+            "page3" :{
+                "text": "Il fait très attention à son apparence, comme on peut voir avec son tophat."
+            }
+        
+        }
     }
 }
 
