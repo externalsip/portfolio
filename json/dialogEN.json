@@ -1,0 +1,300 @@
+{"projects": {
+    "intro": {
+        "projectImg": "none",
+        "dialog": {
+            "page0": {
+                "text": "Hi !!!"
+            },
+            "page1": {
+                "text": "Welcome to my portfolio !"
+            },
+            "page2": {
+                "text": "I did my best to come up with an original idea and I ended up with this:"
+            },
+            "page3": {
+                "text": "A visual novel !!!"
+            },
+            "page4": {
+                "text": "I like writting script and code, whether its for websites, games or anything else."
+            },
+            "page5": {
+                "text": "As long as theres code to be written, I'll always be interested in working on a project."
+            },
+            "page6": {
+                "text": "As you can see with this portfolio in itself, I like to create things from scratch. I am capable of using the basic web languages of HTML CSS and JavaScript with a lot of ease."
+            },
+            "page7": {
+                "text": "At the moment, I am also learning how to use Unity, which uses C#, and I have some experience with Arduino IDE, which uses C++, despite the similar names those two languages have some major differences in syntax"
+            },
+            "page8": {
+                "text": "Outside of programming, I also draw pixel art on Aseprite when I can, this is the software I used for the assets here."
+            },
+            "page9": {
+                "text": "I can also use both Blender and Autodesk MAYA for 3D as well as Davinci Resolve for video editing."
+            },
+            "page10": {
+                "text": "Well, let's not waste more time than this, here's the first project !",
+                "swap": true
+            }
+
+        }
+    },
+    "project1": {
+        "modalContent": {
+            "name": "Cambriolage/Larceny",
+            "role": "Developper, UI Designer",
+            "desc": "Larceny was a prototype I fully programmed in pure JavaScript with a friend doing the assets, it was meant to be an adventure/puzzle point and click game fully playable on the web. It had features such as multiple choices and saves.",
+            "software": ["Visual Studio Code (HTML, CSS, JavaScript, JSON)", "GitHub/GitHub Desktop (Saves. Teamwork, Archives)", "Trello (Organisation)", "Figma (Page layouts)"],
+            "media": ["Visual Novel prototype (video (French))", "https://www.youtube.com/watch?v=xBlYuq-_zoo&ab_channel=joeballs", "Shop prototype (video (French))", "https://www.youtube.com/watch?v=0THoGFXAyyE&ab_channel=JacobAlariebrousseau", "Project Repository", "https://github.com/externalsip/cambriolageRemaster"]
+        },
+        "length": 7,
+        "content": {
+            "slide0":{
+                "type": "image",
+                "source": "assets/images/projet1/cambriolageSC0.png",
+                "tip": "Larceny"
+            },
+            "slide1":{
+                "type": "video",
+                "source": "https://www.youtube.com/embed/0THoGFXAyyE?si=SxQv1_1ySWPiPfDq",
+                "tip": "Shop showcase"
+            },
+            "slide2":{
+                "type": "image",
+                "source": "assets/images/projet1/cambriolageSC1.png",
+                "tip": "JSON Dialog"
+            },
+            "slide3":{
+                "type": "image",
+                "source": "assets/images/projet1/cambriolageSC2.png",
+                "tip": "Declaration of objects in Javascript"
+            },
+            "slide4":{
+                "type": "image",
+                "source": "assets/images/projet1/cambriolageSC3.png",
+                "tip": "Function adding items to player inventory"
+            },
+            "slide5":{
+                "type": "image",
+                "source": "assets/images/projet1/cambriolageSC4.png",
+                "tip": "Function for purchasing items"
+            },
+            "slide6":{
+                "type": "image",
+                "source": "assets/images/projet1/cambriolageSC5.png",
+                "tip": "Function for selling items"
+            }
+        },
+        "dialog": {
+            "page0": {
+                "text": "Larceny is a game I worked on with a friend, he was handling the art while I was handling the programming."
+            },
+            "page1": {
+                "text": "The original idea was to remake an old project we made a few years ago while we had just started out, and to make it more responsive."
+            },
+            "page2": {
+                "text": "When I started out, I thought to myself that instead of only doing that, it'd be interesting to add more stuff than there was originally, since we could now do things that we couldnt when we did the original."
+            },
+            "page3": {
+                "text": "That's how we ended up making this point and click adventure game heavily inspired by Ace Attorney."
+            },
+            "page4": {
+                "text": "Unfortunately, we never completed the project, there were many reasons for this including my mental state at the time, the fact that school was starting again soon and we also decided that it'd be a better idea to simply make the game in a better environment."
+            },
+            "page5": {
+                "text": "Even then I still managed to make some stuff I'd consider impressive, like the complete shop and inventory system made in pure JavaScript."
+            },
+            "page6": {
+                "text": "Most of what was done in this project was completly self-taught, with a lot of Stack Overflow pages open. (And a bit of help from AI when I needed something explained more clearly)"
+            },
+            "page7": {
+                "text": "The idea of remaking this project hasnt been abandonned, one day we'll remake it in an actual game engine most likely Godot or Unity."
+            },
+            "page8": {
+                "text": "Well, thats pretty much what I wanted to say about this project, I did a lot of experimentation on it and I had a lot of fun with it."
+            },
+            "page9": {
+                "text": "The fact that I managed to build fully functional game systems in a pure web format was honestly enough to satisfy me.",
+                "NextPage": "End"
+            }
+        }
+        
+    },
+    "project2": {
+        "modalContent": {
+            "name": "Dressup",
+            "role": "Developper, UI Designer",
+            "desc": "Dressup is a character creator, where you can pick from a variety of hats, hairs, eyes, clothes and a lot more, the colors can also be adjusted with css filters.",
+            "software": ["Visual Studio Code (HTML, CSS, Javascript)", "GitHub/GitHub Desktop (Saves, Teamwork, Archive)"],
+            "media": ["Project Showcase (video)", "https://www.youtube.com/watch?v=UALQJVaA0Bw&ab_channel=joeballs", "Project Repository", "https://github.com/externalsip/dressup"]
+        },
+        "length": 5,
+        "content": {
+            "slide0":{
+                "type": "image",
+                "source": "assets/images/projet2/dressupSC0.png",
+                "tip": "Dressup"
+            },
+            "slide1": {
+                "type": "video",
+                "source": "https://www.youtube.com/embed/UALQJVaA0Bw?si=UWIndh62eLq7eeDI",
+                "tip": "Project Showcase"
+            },
+            "slide2":{
+                "type": "image",
+                "source": "assets/images/projet2/dressupSC1.png",
+                "tip": "Arrays of image links"
+            },
+            "slide3":{
+                "type": "image",
+                "source": "assets/images/projet2/dressupSC2.png",
+                "tip": "Category swap functions (Could be improved)"
+            },
+            "slide4":{
+                "type": "image",
+                "source": "assets/images/projet2/dressupSC3.png",
+                "tip": "LocalStorage functions"
+            },
+            "slide5":{
+                "type": "image",
+                "source": "assets/images/projet2/dressupSC4.png",
+                "tip": "Function for hue modification."
+            }
+        },
+        "dialog": {
+            "page0": {
+                "text": "Dressup was the first personal project I worked on, my goal for this one was to have as little HTML possible and to make it as easy as possible to add new stuff in the game."
+            },
+            "page1":{
+                "text": "I'm really happy with how easy I managed to make it, all you had to do was add the image's source in the right array and it was fully implemented."
+            },
+            "page2":{
+                "text": "It made my partner's work a lot easier, since all he had to do was make the assets and add them in the arrays without having to bother with weird code."
+            },
+            "page3": {
+                "text": "This project was fully completed appart from one pickle, we wanted to add the feature to save the images as png's, but css filters are ignored by that, which was kinda sad because it just came out with everything being red since it was the original color."
+            },
+            "page4": {
+                "text": "Other than that problem, I was honestly happy with the result.",
+                "NextPage": "End"
+            }
+        }
+    },
+    "project3": {
+        "modalContent":{
+            "name": "Airflight project",
+            "role": "Developper, Web Designer",
+            "desc": "The Airflight project consisted in remaking an already existing website using Bootstrap framework.",
+            "software": ["Visual Studio Code (HTML, CSS, JavaScript)", "GitHub/GitHub Desktop (Saves, Teamwork, Archive)", "Figma (Layout)"],
+            "media": ["Project Showcase (video (French))", "https://www.youtube.com/watch?v=he3QFwtuSRE&ab_channel=JacobAlariebrousseau", "Project Repository", "https://github.com/externalsip/alariebrousseau_do_airflight"]
+        },
+        "length": 1,
+        "content": {
+           "slide0":{
+                "type": "video",
+                "source": "https://www.youtube.com/embed/he3QFwtuSRE?si=VfrJBMtv7AQ6LlK3",
+                "tip": "Landing page showcase"
+            }
+        },
+        "dialog": {
+            "page0": {
+                "text": "The Airflight project is something we worked on in class, for this project we had to remake ARS ELECTRONICA's website, I was in charge of the landing page."
+            },
+            "page1": {
+                "text": "The website as a whole was made using Bootstrap framework, which made it easier to make it responsive."
+            },
+            "page2": {
+                "text": "It was the first project that made us work on code with multiple people on Github Desktop om class, I had already worked on it myself in personal projects, but it was the first time I had to resolve merge conflicts."
+            },
+            "page3": {
+                "text": "We also had to use Swiper.js for the swipers, those obviously also had to be responsive."
+            },
+            "page4": {
+                "text": "I like using Bootstrap personally, its really easy to implement and streamlines a lot of messy css",
+                "NextPage": "End"
+            }
+        }
+    },
+    "project4": {
+        "modalContent": {
+            "name": "LIMINAL",
+            "role": "3D Modeling and animation, video editing and sound design",
+            "desc": "LIMINAL is a short video with a meaning left to interpretation about a person trapped in an environment that is as unfamiliar that it is familiar.",
+            "software": ["Autodesk MAYA (3D modeling and animation)", "VCV RACK (Synthesizing sounds)", "REAPER (Sound design)", "DaVinci Resolve (Video editing)"],
+            "media": ["Video showcase (video (Credits in french))", "https://www.youtube.com/watch?v=dqnG4whgjDM&ab_channel=JacobAlariebrousseau"]
+        },
+        "length": 1,
+        "content": {
+            "slide0":{
+                 "type": "video",
+                 "source": "https://www.youtube.com/embed/dqnG4whgjDM?si=YD364sr4rVoTg4Lr",
+                 "tip": "Video showcase"
+             }
+         },
+        "dialog": {
+            "page0": {
+                "text": "First project that isnt web !!! LIMINAL is a project on which I worked during last winter"
+            },
+            "page1": {
+                "text": "Everything that is featured in it has been made by myself or my teammate."
+            },
+            "page2": {
+                "text": "I had a love-hate relationship with this project, on one side I really like the end result, but on the other, I had to model the entire pool scene in one weekend."
+            },
+            "page3": {
+                "text": "I had to put about 30 hours in the scene in 2 days, and ended up almost collapsing, but I think that the end result was worth it."
+            },
+            "page4": {
+                "text": "This project was nominated for the audio-visual essay contest of 2023 organized by the Techniques d'Intégration Multimédia, this nomination has made it worth my work."
+            },
+            "page5": {
+                "text": "The only directive we had for this project was that we had to make the viewer feel something, in the case of this project, it was anguish.",
+                "NextPage": "End"
+            }
+        }
+    },
+    "project5": {
+        "modalContent": {
+            "name": "Bouboule",
+            "role": "3D Modeling",
+            "desc": "Bouboule is a character that was created in 3D modeling class.",
+            "software": ["Autodesk MAYA (3D modeling)"]
+        },
+        "length": 2,
+        "content": {
+            "slide0": {
+                "type": "image",
+                "source": "assets/images/projet5/BoubouleSC0.jpg",
+                "tip": "Bouboule"
+            },
+            "slide1": {
+                "type": "image",
+                "source": "assets/images/projet5/BoubouleSC1.jpg",
+                "tip": "Bouboule (again)"
+            }
+        },
+        "dialog": {
+            "page0" :{
+                "text": "Bouboule is a character I originally made when I was little in the video game Spore."
+            },
+            "page1" :{
+                "text": "Since then, he has appeared in a lot of projects and with time a lot of modifications happened. He is now different enough from the original one to be called my own character."
+            },
+            "page2" :{
+                "text": "He dosent seem that nice, but wouldnt hurt a fly."
+            },
+            "page3" :{
+                "text": "He's very careful about his appearance, always wearing his top hat."
+            },
+            "page4" :{
+                "text": "Also, he is the favicon for this website !",
+                "NextPage": "End"
+            }
+        
+        }
+    }
+}
+
+
+
+}

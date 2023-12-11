@@ -9,7 +9,7 @@ let currentSlide;
 let currentProject = document.querySelector(".swiperPortfolio");
 
 let json, to;
-let dialogData = './json/dialog.json';
+let dialogData = './json/dialogFR.json';
 
 // projects is the table in which all the dialog is held
 // projectIndex is the index of the project currently being displayed
@@ -36,6 +36,12 @@ returnBtn.addEventListener("click", () => {
 	projectIndex = 0;
 	projectSwap = Object.keys(json.projects)[projectIndex];
 	currentPage = Object.keys(json.projects[projectSwap].dialog)[pageNum];
+	buttonLast.classList.add("disabledBtn");
+	buttonNext.classList.add("disabledBtn");
+	textbox.style.width = "100%";
+	buttonLast.setAttribute("disabled", "");
+	buttonNext.setAttribute("disabled", "");
+	currentProject.style.display = "none";
 });
 
 async function grabData() {
@@ -277,9 +283,15 @@ let mainSoftwareList = document.querySelector(".main_softwareList");
 let mainContactList = document.querySelector(".main_contactList");
 let mainModalCloseBtn = document.querySelector(".modalMain__btn");
 
+
 // Visual Novel
 
+let projectSoftwareList = document.querySelector(".softwareList");
+let projectMediaList = document.querySelector(".mediaList");
 
+// Portrait Warning
+
+let portraitWarning = document.querySelector(".portraitWarning__container__text"); 
 
 
 langSwapEN.pause();
@@ -287,6 +299,7 @@ langSwapFR.pause();
 
 let langSwap = document.getElementById("lang");
 let langBtn = document.querySelector(".langBtn");
+let projectModalClose = document.querySelector(".modal__btn");
 
 //Animation for the slider plus translation of static elements on the website.
 
@@ -294,23 +307,44 @@ lang.addEventListener("change", () => {
 	if(lang.checked){
 		langSwapEN.restart();
 		langSwapEN.play();
+		dialogData = './json/dialogEN.json';
+
 		openBtn.innerHTML = "Open";
 		careerObjectiveTitle.innerHTML = "Career Objective";
 		careerObjectiveText.innerHTML = "To gain experience, knowledge and to learn new ways of working.";
 		mainSoftwareList.setAttribute("aria-label", "Softwares");
 		mainContactList.setAttribute("aria-label", "Contact me");
 		mainModalCloseBtn.innerHTML = "Close";
+
+
+		buttonLast.innerHTML = "Previous Project";
+		buttonNext.innerHTML = "Next Project";
+		projectSoftwareList.setAttribute("aria-label", "Software used");
+		projectMediaList.setAttribute("aria-label", "Media");
+		projectModalClose.innerHTML = "Close";
+
+		portraitWarning.innerHTML = "WARNING <br> This page is not meant to be displayed in portrait mode, please flip your device.";
 	}
 	else{
 		langSwapFR.restart();
 		langSwapFR.play();
-		dialogData = './json/dialog.json';
+		dialogData = './json/dialogFR.json';
+
 		openBtn.innerHTML = "Ouvrir";
 		careerObjectiveTitle.innerHTML = "Objectif de Carrière";
 		careerObjectiveText.innerHTML = "Gagner de l'expérience, des connaissances et découvrir des nouvelles façons de travailler.";
 		mainSoftwareList.setAttribute("aria-label", "Logiciels");
 		mainContactList.setAttribute("aria-label", "Me rejoindre");
 		mainModalCloseBtn.innerHTML = "Fermer";
+
+
+		buttonLast.innerHTML = "Projet Précédent";
+		buttonNext.innerHTML = "Projet Suivant";
+		projectSoftwareList.setAttribute("aria-label", "Logiciels utilisés");
+		projectMediaList.setAttribute("aria-label", "Médias");
+		projectModalClose.innerHTML = "Fermer";
+
+		portraitWarning.innerHTML = "ATTENTION <br> cette page n'est pas faite pour être vue en portrait, merci de pivoter votre appareil.";
 	}
 });
 

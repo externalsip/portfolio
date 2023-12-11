@@ -27,7 +27,7 @@
                 "text": "Je suis également en train d'apprendre le PHP dans le contexte de WordPress, je sais également me servir du C# dans le contexte de Unity et du C++ dans le contexte de Arduino."
             },
             "page8": {
-                "text": "En dehors de la programmation, j'utilise Aseprite pour faire du pixel art, ce visual novel étant un exemple de ce que je peux faire, je sais également me servir de Autodesk MAYA pour de la 3D et Davinci Resolve pour du montage vidéo."
+                "text": "En dehors de la programmation, j'utilise Aseprite pour faire du pixel art, ce visual novel étant un exemple de ce que je peux faire, je sais également me servir de Autodesk MAYA (et plus récement Blender) pour de la 3D et Davinci Resolve pour du montage vidéo."
             },
             "page9": {
                 "text": "Bon, on va pas prendre plus de temps que ça, voilà le premier projet.",
@@ -272,7 +272,7 @@
         },
         "dialog": {
             "page0" :{
-                "text": "Cool histoire: Bouboule est un personnage que j'ai originalement créé dans le jeu Spore quand j'étais petit."
+                "text": "Bouboule est un personnage que j'ai originalement créé dans le jeu Spore quand j'étais petit."
             },
             "page1" :{
                 "text": "Depuis ce temps, il est apparu dans plus d'un de mes projets personnels, et au cours des années, j'ai fais assez de modifications au design original que c'est maintenant mon propre personnage."
@@ -282,6 +282,10 @@
             },
             "page3" :{
                 "text": "Il fait très attention à son apparence, comme on peut voir avec son tophat."
+            },
+            "page4" :{
+                "text": "De plus, il est également le favicon de ce site !",
+                "NextPage": "End"
             }
         
         }
