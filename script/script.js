@@ -45,6 +45,7 @@ returnBtn.addEventListener("click", () => {
 	buttonNext.setAttribute("disabled", "");
 	currentProject.style.display = "none";
 	skipBtn.style.display = "block";
+	initialize(json);
 });
 
 async function grabData() {
