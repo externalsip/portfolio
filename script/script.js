@@ -9,7 +9,7 @@ let currentSlide;
 let currentProject = document.querySelector(".swiperPortfolio");
 
 let json, to;
-const dialogData = './json/dialog.json';
+let dialogData = './json/dialog.json';
 
 // projects is the table in which all the dialog is held
 // projectIndex is the index of the project currently being displayed
@@ -24,7 +24,7 @@ let vn = document.querySelector(".wrapper");
 openBtn.addEventListener("click", () => {
 	mainScreen.style.display = "none";
 	vn.style.display = "block";
-	initialize(json);
+	grabData();
 });
 
 let returnBtn = document.querySelector(".returnBtn");
@@ -73,7 +73,7 @@ async function initialize(data) {
 
 // TYPEWRITTER
 // Typewritter takes the text from initialize and makes it display one character at a time in the textbox. If it sees that the next word to be displayed will go over the limits of the textbox, it skips a line.
-//This function was made with the assistance of AI, my stance on AI is that as long as you dont use it without ever trying to understand what you were asking it to do, its a useful tool, although it has to stay a tool.
+//This function was made with the assistance of AI, my stance on AI is that as long as you dont use it without ever trying to understand what you were asking it to do, its a useful tool, although it has to stay a tool otherwise it is hard to gauge how much someone actually knows.
 
 function typeWriter(txt, i, wordsArr, currentWord) {
 	i = i || 0;
@@ -238,11 +238,22 @@ buttonNext.addEventListener("click", () => {
 
 // GSAP animations on spritesheets and the icon that fades in and out when there is a next slide.
 
+//Animations
+
 let talk = gsap.to(".sprite__mouth", {backgroundPositionX: "-300%", ease: SteppedEase.config(3), duration: 0.5, repeat: -1});
 let blink = gsap.to(".sprite__eyes", {backgroundPositionX: "-400%", ease: SteppedEase.config(4), duration: 0.2, repeat: -1, repeatDelay: 5});
 
+let langSwapEN = gsap.timeline()
+.to(".langBtn", {backgroundPositionX: "-1300%", ease: SteppedEase.config(13), duration: 0.5})
+.set(".langBtn", {backgroundPositionX: "-1300%"});
+
+let langSwapFR = gsap.timeline()
+.to(".langBtn", {backgroundPositionX: "0", ease: SteppedEase.config(13), duration: 0.5})
+.set(".langBtn", {backgroundPositionX: "0"});
 
 talk.pause();
+
+
 //Function handles the talking animation, if text is currently being displayed, the animation will loop, it resets when the text stops displaying.
 
 function handleAnimation(){
@@ -254,6 +265,54 @@ function handleAnimation(){
 		gsap.set(".sprite__mouth", {backgroundPositionX: 0});
 	}
 }
+
+
+// Declaration of variable to modify text in the HTML
+
+// Main Page
+
+let careerObjectiveTitle = document.querySelector(".modalMain__career__title");
+let careerObjectiveText = document.querySelector(".modalMain__career__text");
+let mainSoftwareList = document.querySelector(".main_softwareList");
+let mainContactList = document.querySelector(".main_contactList");
+let mainModalCloseBtn = document.querySelector(".modalMain__btn");
+
+// Visual Novel
+
+
+
+
+langSwapEN.pause();
+langSwapFR.pause();
+
+let langSwap = document.getElementById("lang");
+let langBtn = document.querySelector(".langBtn");
+
+//Animation for the slider plus translation of static elements on the website.
+
+lang.addEventListener("change", () => {
+	if(lang.checked){
+		langSwapEN.restart();
+		langSwapEN.play();
+		openBtn.innerHTML = "Open";
+		careerObjectiveTitle.innerHTML = "Career Objective";
+		careerObjectiveText.innerHTML = "To gain experience, knowledge and to learn new ways of working.";
+		mainSoftwareList.setAttribute("aria-label", "Softwares");
+		mainContactList.setAttribute("aria-label", "Contact me");
+		mainModalCloseBtn.innerHTML = "Close";
+	}
+	else{
+		langSwapFR.restart();
+		langSwapFR.play();
+		dialogData = './json/dialog.json';
+		openBtn.innerHTML = "Ouvrir";
+		careerObjectiveTitle.innerHTML = "Objectif de Carrière";
+		careerObjectiveText.innerHTML = "Gagner de l'expérience, des connaissances et découvrir des nouvelles façons de travailler.";
+		mainSoftwareList.setAttribute("aria-label", "Logiciels");
+		mainContactList.setAttribute("aria-label", "Me rejoindre");
+		mainModalCloseBtn.innerHTML = "Fermer";
+	}
+});
 
 //Swiper
 
@@ -405,4 +464,3 @@ function openModal(){
 
 //calls grabdata on execution of script, will most likely be modified later if I decide to make a title screen (would most likely be the best way to add the required info without it feeling forced)
 
-grabData();

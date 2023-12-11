@@ -137,6 +137,22 @@ body {
   background-color: #333333;
 }
 
+.langBtn {
+  background-image: url("assets/images/langChangeRadio.png");
+  background-size: 1400%, 100%;
+  width: 7vw;
+  aspect-ratio: 2/1;
+  position: absolute;
+  image-rendering: pixelated;
+  cursor: pointer;
+  top: 5%;
+  right: 5%;
+}
+
+#lang {
+  display: none;
+}
+
 .wrapper {
   width: 100%;
   height: 100%;
