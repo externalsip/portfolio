@@ -8,6 +8,8 @@ let currentPage;
 let currentSlide;
 let currentProject = document.querySelector(".swiperPortfolio");
 
+let skipBtn = document.querySelector(".skipBtn");
+
 let json, to;
 let dialogData = './json/dialogFR.json';
 
@@ -42,6 +44,7 @@ returnBtn.addEventListener("click", () => {
 	buttonLast.setAttribute("disabled", "");
 	buttonNext.setAttribute("disabled", "");
 	currentProject.style.display = "none";
+	skipBtn.style.display = "block";
 });
 
 async function grabData() {
@@ -67,6 +70,7 @@ async function initialize(data) {
 	else{
 		if(data.projects[projectSwap].content != null){			
 			currentProject.style.display = "block";
+			skipBtn.style.display = "none";
 			
 		}
 		else{
@@ -496,5 +500,22 @@ function openModal(){
 
 
 
-//calls grabdata on execution of script, will most likely be modified later if I decide to make a title screen (would most likely be the best way to add the required info without it feeling forced)
+// Button to skip the dialogue at the start, was added by popular demand.
+
+skipBtn.addEventListener("click", () => {
+	pageNum = 0;
+	projectIndex = 1;
+	projectSwap = Object.keys(json.projects)[projectIndex];
+	currentPage = Object.keys(json.projects[projectSwap].dialog)[pageNum];
+	initialize(json);
+	manageSlides(json);
+	manageModal(json);
+	buttonLast.classList.remove("disabledBtn");
+	buttonNext.classList.remove("disabledBtn");
+	textbox.style.width = "70%";
+	buttonLast.removeAttribute("disabled");
+	buttonNext.removeAttribute("disabled");
+});
+
+
 
