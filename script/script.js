@@ -432,7 +432,7 @@ function manageModal(data){
 		li.classList.add("modal__list__element");
 		li.innerHTML = "<a href= '" + data.projects[projectSwap].modalContent.media[i + 1] + "'> "+ data.projects[projectSwap].modalContent.media[i] +" </a>";
 		mediaList.appendChild(li);
-	}
+		}
 	}
 	else{
 		mediaList.style.display = "none";
