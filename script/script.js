@@ -212,7 +212,7 @@ buttonLast.addEventListener("click", () => {
 	isTextDisplaying = false;
 	if(projectIndex == 1){
 		pageNum = 0;
-		projectIndex = 5;
+		projectIndex = 6;
 		projectSwap = Object.keys(json.projects)[projectIndex];
 		currentPage = Object.keys(json.projects[projectSwap].dialog)[pageNum];
 	}
@@ -230,7 +230,7 @@ buttonLast.addEventListener("click", () => {
 //Next project
 buttonNext.addEventListener("click", () => {
 	isTextDisplaying = false;
-	if(projectIndex == 5){
+	if(projectIndex == 6){
 		pageNum = 0;
 		projectIndex = 1;
 		projectSwap = Object.keys(json.projects)[projectIndex];

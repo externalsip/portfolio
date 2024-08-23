@@ -292,6 +292,55 @@
             }
         
         }
+    },
+
+    "project6":{
+        "modalContent": {
+            "name": "Presentation video",
+            "role": "creation of the system for detecting markers, developing the game on the table",
+            "desc": "Canevas Cosmique is the final project of my multimedia integration technique, it revolves around an interactive table",
+            "software": ["TouchDesigner", "Python", "Unity"],
+            "media": ["Project documentation (FR)", "https://tim-montmorency.com/2024/projets/Canevas-Cosmique/docs/web/index.html", "Project trailer", "https://www.youtube.com/watch?v=5xu6JZipWec"]
+        },
+        "length": 3,
+        "content": {
+            "slide0":{
+                "type": "video",
+                "source": "https://www.youtube.com/embed/Jrn4U27G5YY?si=RtLCt0K59j7GBdpZ",
+                "tip": "Realisation video"
+            },
+            "slide1": {
+                "type": "image",
+                "source": "assets/images/projet6/tableSC0.jpg",
+                "tip": "Table in developpment"
+            },
+            "slide2": {
+                "type": "image",
+                "source": "assets/images/projet6/tableSC1.jpg",
+                "tip": "Team picture"
+            }
+        },
+        "dialog":{
+            "page0": {
+                "text": "Canevas Cosmique is the last project I worked on during my multimedia integration technique."
+            },
+            "page1": {
+                "text": "It was not a simple project to produce, I had to learn technologies that were not taught during my classes, python and touchDesigner."
+            },
+            "page2": {
+                "text": "Despite the countless hours of debugging I went through, I still think this is my greatest accomplishment, my team and myself did a great job."
+            },
+            "page3": {
+                "text": "The idea behind this project was the allow the interactor to influence a virtual world with the use of tangible objects."
+            },
+            "page4": {
+                "text": "I think we managed to pull that off."
+            },
+            "page5":{
+                "text": "I also wrote a story for the table, not many people read it as it was quite long.",
+                "NextPage":"End"
+            }
+        }
     }
 }
 

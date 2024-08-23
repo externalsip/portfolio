@@ -289,6 +289,55 @@
             }
         
         }
+    },
+
+    "project6":{
+        "modalContent": {
+            "name": "Vidéo de présentation",
+            "role": "Création du système de détection des marqueurs, développement du jeu sur la table",
+            "desc": "Projet final de mon parcour en intégration multimédia, Canevas Cosmique est un projet tournant autours d'une table intéractive.",
+            "software": ["TouchDesigner", "Python", "Unity"],
+            "media": ["Documentation du projet", "https://tim-montmorency.com/2024/projets/Canevas-Cosmique/docs/web/index.html", "Bande annonce du projet", "https://www.youtube.com/watch?v=5xu6JZipWec"]
+        },
+        "length": 3,
+        "content": {
+            "slide0":{
+                "type": "video",
+                "source": "https://www.youtube.com/embed/Jrn4U27G5YY?si=RtLCt0K59j7GBdpZ",
+                "tip": "Vidéo de réalisation"
+            },
+            "slide1": {
+                "type": "image",
+                "source": "assets/images/projet6/tableSC0.jpg",
+                "tip": "Table en développement"
+            },
+            "slide2": {
+                "type": "image",
+                "source": "assets/images/projet6/tableSC1.jpg",
+                "tip": "Photo d'équipe"
+            }
+        },
+        "dialog":{
+            "page0": {
+                "text": "Canevas Cosmique est le dernier projet sur lequel j'ai travaillé dans le cadre de ma techniques en intégration multimédia"
+            },
+            "page1": {
+                "text": "Ce projet n'a pas été simple à accomplir, j'ai dû apprendre des technologies qui n'étaient pas couvertes dans mes cours: Python et touchDesigner"
+            },
+            "page2": {
+                "text": "Malgré les incalculable heures de debugging que j'ai dû faire, je pense que ce projet est mon plus grand accomplisement, je suis très fier du travail que moi et mon équipe avons fait."
+            },
+            "page3": {
+                "text": "L'idée derrière Canevas Cosmique était de donner à l'intéracteur un sentiment de contrôle sur un monde virtuel à partir d'objets qu'il pouvait toucher."
+            },
+            "page4": {
+                "text": "Je pense que nous avons réussi à accomplir cet objectif."
+            },
+            "page5":{
+                "text": "J'ai également écrit une histoire pour la table, mais il n'y a pas beaucoup de monde qui l'a lu, elle était longue.",
+                "NextPage":"End"
+            }
+        }
     }
 }
 
